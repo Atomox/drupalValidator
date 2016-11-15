@@ -17,19 +17,19 @@ This file is split into 5 layers. Each layer only handles 1 purpose.
 Layer:
  *
  *   1.  Element selection and binding.
- *
+ 
  *   2.  Grouping logic which will be attached to a binding in level 1.
  *       *ALL ERROR MESSAGE COPY is found here.*
- *
+ 
  *   3.  Linking a validation rule with a UI response function.
  *       Linking several validation rules together, and attaching a UI response
  *       function that the outcome of that set of rules.
- *
+ 
  *   4.  Error-handling UI logic. Any markup, html, etc lives here, and is
  *       abstracted (1 funtion for all error UI display on any field.)
- *
+ 
  *   5.  Abstract, simple, reusable rules. Think any test that only returns
  *       true or false.
- *
+ 
  *  <!>  NOTE: Layers 1 & 2 should be implemented on a per-module/form basis,
  *             and reference back to layers 3-5 within this file.
